@@ -16,3 +16,8 @@ local.properties
 
 # Project exclude paths
 /rangesensor/src/main/cpp/VL53L0X/platform/
+/.idea/compiler.xml
+/.idea/gradle.xml
+/.idea/misc.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
