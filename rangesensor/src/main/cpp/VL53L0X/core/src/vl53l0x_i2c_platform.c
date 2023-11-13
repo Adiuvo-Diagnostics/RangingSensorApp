@@ -71,6 +71,7 @@ void closeI2CDevice() {
 
 // I2C write function
 int32_t RANGING_SENSOR_COMMS_Write_V2W8(uint8_t address, uint8_t, uint8_t index, uint8_t *pdata, int32_t count) {
+    openI2CDevice();
     if (file_i2c < 0) {
         return STATUS_FAIL;
     }

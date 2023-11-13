@@ -121,7 +121,8 @@ VL53L0X_Error VL53L0X_WrByte(VL53L0X_DEV Dev, uint8_t index, uint8_t data){
     int32_t status_int;
 	uint8_t deviceAddress;
 
-    deviceAddress = Dev->I2cDevAddr;
+//    deviceAddress = Dev->I2cDevAddr;
+    deviceAddress = 29;
 
 	status_int = VL53L0X_write_byte(deviceAddress, index, data);
 
@@ -136,7 +137,8 @@ VL53L0X_Error VL53L0X_WrWord(VL53L0X_DEV Dev, uint8_t index, uint16_t data){
     int32_t status_int;
 	uint8_t deviceAddress;
 
-    deviceAddress = Dev->I2cDevAddr;
+//    deviceAddress = Dev->I2cDevAddr;
+    deviceAddress = 29;
 
 	status_int = VL53L0X_write_word(deviceAddress, index, data);
 
